@@ -2,6 +2,7 @@
 $dark-blue: #292c44;
 $dark-orange: #ff5349;
 $dark-white: #f0f0f1;
+$dark-white-box-home: #f0f0f191;
 $turquoise: #18cdca;
 $blue: #4f80e1;
 
@@ -12,10 +13,65 @@ $lato: 'Lato', sans-serif;
 body {
     font-family: Lato;
     margin: 0 auto;
-    nav {
-        a {
-            font-family: $orbitron;
+    max-width: 1200px;
+    background-image: url(../images/bg-icons.png);
+    background-repeat: repeat;
+    background-color: $dark-white;
+        .navbar {
+            width: 100%;
+            align-items: right;
+            align-items: center;
+            font-family: $lato;
+            color: $dark-blue;
+            text-transform: uppercase;
+            height: 137px;
+            font-size: 19px;
+            a {
+                font-family: $orbitron;
+                color: blue;
+                span {
+                    color: $dark-orange;
+                }
+            }
+            .navbar-collapse {
+                justify-content: flex-end;
+                .navbar-nav {
+                    .nav-link {
+                        font-family: $lato;
+                        margin: 10px;
+                        &:hover {
+                            background-color: $turquoise;
+                            color: white;  
+                            border-radius: 3px;   
+                        }
+                    }
+                }
+            }
+        }  
+        .home {
+            height: 825px;
+            width: 100%;
+            background-image: url(../images/roll-the-dice.png);
+            background-size: cover;
+            position: relative;
+            .home-box {
+                width: 600px;
+                height: 293px;
+                position: absolute;
+                right: 0;
+                bottom: 10%;
+                background-color: $dark-white-box-home;
+                padding: 10px;
+                h1 {
+                    font-size: 56px;
+                    span {
+                        font-family: $orbitron;
+                        font-weight: bolder;
+                    }
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
         }
-
-    }
 }

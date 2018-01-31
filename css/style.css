@@ -2,8 +2,54 @@
 /*FONTS*/
 body {
   font-family: Lato;
-  margin: 0 auto; }
-  body nav a {
-    font-family: "Orbitron", sans-serif; }
+  margin: 0 auto;
+  max-width: 1200px;
+  background-image: url(../images/bg-icons.png);
+  background-repeat: repeat;
+  background-color: #f0f0f1; }
+  body .navbar {
+    width: 100%;
+    align-items: right;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: #292c44;
+    text-transform: uppercase;
+    height: 137px;
+    font-size: 19px; }
+    body .navbar a {
+      font-family: "Orbitron", sans-serif;
+      color: blue; }
+      body .navbar a span {
+        color: #ff5349; }
+    body .navbar .navbar-collapse {
+      justify-content: flex-end; }
+      body .navbar .navbar-collapse .navbar-nav .nav-link {
+        font-family: "Lato", sans-serif;
+        margin: 10px; }
+        body .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+          background-color: #18cdca;
+          color: white;
+          border-radius: 3px; }
+  body .home {
+    height: 825px;
+    width: 100%;
+    background-image: url(../images/roll-the-dice.png);
+    background-size: cover;
+    position: relative; }
+    body .home .home-box {
+      width: 600px;
+      height: 293px;
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      background-color: #f0f0f191;
+      padding: 10px; }
+      body .home .home-box h1 {
+        font-size: 56px; }
+        body .home .home-box h1 span {
+          font-family: "Orbitron", sans-serif;
+          font-weight: bolder; }
+      body .home .home-box p {
+        font-size: 17px; }
 
 /*# sourceMappingURL=style.css.map */
