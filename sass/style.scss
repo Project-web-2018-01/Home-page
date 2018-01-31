@@ -1,0 +1,21 @@
+/*COLORS*/
+$dark-blue: #292c44;
+$dark-orange: #ff5349;
+$dark-white: #f0f0f1;
+$turquoise: #18cdca;
+$blue: #4f80e1;
+
+/*FONTS*/
+$orbitron: 'Orbitron', sans-serif;
+$lato: 'Lato', sans-serif;
+
+body {
+    font-family: Lato;
+    margin: 0 auto;
+    nav {
+        a {
+            font-family: $orbitron;
+        }
+
+    }
+}
