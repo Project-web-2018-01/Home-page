@@ -26,6 +26,7 @@ body {
             text-transform: uppercase;
             height: 137px;
             font-size: 19px;
+            margin-bottom: 0px;
             a {
                 font-family: $orbitron;
                 span {
@@ -51,14 +52,14 @@ body {
             height: 825px;
             width: 100%;
             background-image: url(../images/roll-the-dice.png);
-            background-size: cover;
+            background-repeat: no-repeat;
             position: relative;
             .home-box {
                 width: 600px;
                 height: 300px;
                 position: absolute;
                 right: 0;
-                bottom: 18%;
+                bottom: 30%;
                 background-color: $dark-white-box-home;
                 padding: 20px;
                 h1 {
