@@ -17,8 +17,7 @@ body {
     height: 137px;
     font-size: 19px; }
     body .navbar a {
-      font-family: "Orbitron", sans-serif;
-      color: blue; }
+      font-family: "Orbitron", sans-serif; }
       body .navbar a span {
         color: #ff5349; }
     body .navbar .navbar-collapse {
@@ -38,18 +37,21 @@ body {
     position: relative; }
     body .home .home-box {
       width: 600px;
-      height: 293px;
+      height: 300px;
       position: absolute;
       right: 0;
-      bottom: 10%;
+      bottom: 18%;
       background-color: #f0f0f191;
-      padding: 10px; }
+      padding: 20px; }
       body .home .home-box h1 {
-        font-size: 56px; }
+        font-size: 56px;
+        font-weight: 300;
+        margin-bottom: 2px; }
         body .home .home-box h1 span {
           font-family: "Orbitron", sans-serif;
           font-weight: bolder; }
       body .home .home-box p {
-        font-size: 17px; }
+        font-size: 17px;
+        font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */

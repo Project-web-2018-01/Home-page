@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:browser",
+    "browser": "npm run test:browser",
     "test:browser": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html'",
 
     "sass": "npm run test:sass",
-    "test:sass": "sass --watch sass/style.scss:css/style.css"
+    "test:sass": "sass --watch sass/style.scss:css/style.css",
+
+    "all": "npm run browser | npm run sass"
 
   },
   "repository": {
