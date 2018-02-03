@@ -12,69 +12,104 @@ $lato: 'Lato', sans-serif;
 
 body {
     font-family: Lato;
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 0;
     background-image: url(../images/bg-icons.png);
     background-repeat: repeat;
     background-color: $dark-white;
-        .navbar {
-            width: 100%;
-            align-items: right;
-            align-items: center;
-            font-family: $lato;
-            color: $dark-blue;
-            text-transform: uppercase;
-            height: 137px;
-            font-size: 19px;
-            margin-bottom: 0px;
-            a {
-                font-family: $orbitron;
-                span {
-                    color: $dark-orange;
-                }
-            }
-            .navbar-collapse {
-                justify-content: flex-end;
-                .navbar-nav {
-                    .nav-link {
-                        font-family: $lato;
-                        margin: 10px;
-                        &:hover {
-                            background-color: $turquoise;
-                            color: white;  
-                            border-radius: 3px;   
-                        }
-                    }
-                }
-            }
-        }  
-        .home {
-            height: 825px;
-            width: 100%;
-            background-image: url(../images/roll-the-dice.png);
-            background-repeat: no-repeat;
-            position: relative;
-            .home-box {
-                width: 600px;
-                height: 300px;
-                position: absolute;
-                right: 0;
-                bottom: 30%;
-                background-color: $dark-white-box-home;
-                padding: 20px;
-                h1 {
-                    font-size: 56px;
-                    font-weight: 300;
-                    margin-bottom: 2px;
-                    span {
-                        font-family: $orbitron;
-                        font-weight: bolder;
-                    }
-                }
-                p {
-                    font-size: 17px;
-                    font-weight: 300;
+}
+
+.navbar {
+    width: 100%;
+    align-items: right;
+    align-items: center;
+    font-family: $lato;
+    color: $dark-blue;
+    text-transform: uppercase;
+    min-height: 15vh;
+    font-size: 19px;
+    margin-bottom: 0px;
+
+    a {
+        font-family: $orbitron;
+        span {
+            color: $dark-orange;
+        }
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+        .navbar-nav {
+            .nav-link {
+                font-family: $lato;
+                margin: 10px;
+                &:hover {
+                    background-color: $turquoise;
+                    color: white;  
+                    border-radius: 3px;   
                 }
             }
         }
+    }
+}  
+
+.home-container {
+    padding: 0;
+}
+
+.home {
+	min-height: 60vh;
+	background-image: url(../images/roll-the-dice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .home-box {
+    	flex-basis: 50%;
+        background-color: $dark-white-box-home;
+        padding: 20px;
+        h1 {
+            font-size: 56px;
+            font-weight: 300;
+            margin-bottom: 2px;
+            span {
+                font-family: $orbitron;
+                font-weight: bolder;
+            }
+        }
+        p {
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+}
+
+.gamelist-container {
+	margin-top: 20px;
+	border-top: 2px solid $blue;
+}
+
+.gamelist {
+	padding-top: 40px;
+	min-height: 100px;
+}
+
+.games-row-1,
+.games-row-2 {
+	margin: 10px 0;
+}
+
+.game-box {
+	flex: 1;
+	margin: 0 10px;
+	border: 1px solid $blue;
+	min-height: 25vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.game-box:nth-child(2) {
+	margin: 0;
+}
+
+.game-box-info {
+	background: $blue;
+	height: 20%;
 }
