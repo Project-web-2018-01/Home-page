@@ -2,57 +2,83 @@
 /*FONTS*/
 body {
   font-family: Lato;
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0;
   background-image: url(../images/bg-icons.png);
   background-repeat: repeat;
   background-color: #f0f0f1; }
-  body .navbar {
-    width: 100%;
-    align-items: right;
-    align-items: center;
-    font-family: "Lato", sans-serif;
-    color: #292c44;
-    text-transform: uppercase;
-    height: 137px;
-    font-size: 19px;
-    margin-bottom: 0px; }
-    body .navbar a {
-      font-family: "Orbitron", sans-serif; }
-      body .navbar a span {
-        color: #ff5349; }
-    body .navbar .navbar-collapse {
-      justify-content: flex-end; }
-      body .navbar .navbar-collapse .navbar-nav .nav-link {
-        font-family: "Lato", sans-serif;
-        margin: 10px; }
-        body .navbar .navbar-collapse .navbar-nav .nav-link:hover {
-          background-color: #18cdca;
-          color: white;
-          border-radius: 3px; }
-  body .home {
-    height: 825px;
-    width: 100%;
-    background-image: url(../images/roll-the-dice.png);
-    background-repeat: no-repeat;
-    position: relative; }
-    body .home .home-box {
-      width: 600px;
-      height: 300px;
-      position: absolute;
-      right: 0;
-      bottom: 30%;
-      background-color: #f0f0f191;
-      padding: 20px; }
-      body .home .home-box h1 {
-        font-size: 56px;
-        font-weight: 300;
-        margin-bottom: 2px; }
-        body .home .home-box h1 span {
-          font-family: "Orbitron", sans-serif;
-          font-weight: bolder; }
-      body .home .home-box p {
-        font-size: 17px;
-        font-weight: 300; }
+
+.navbar {
+  width: 100%;
+  align-items: right;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  color: #292c44;
+  text-transform: uppercase;
+  min-height: 15vh;
+  font-size: 19px;
+  margin-bottom: 0px; }
+  .navbar a {
+    font-family: "Orbitron", sans-serif; }
+    .navbar a span {
+      color: #ff5349; }
+  .navbar .navbar-collapse {
+    justify-content: flex-end; }
+    .navbar .navbar-collapse .navbar-nav .nav-link {
+      font-family: "Lato", sans-serif;
+      margin: 10px; }
+      .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+        background-color: #18cdca;
+        color: white;
+        border-radius: 3px; }
+
+.home-container {
+  padding: 0; }
+
+.home {
+  min-height: 60vh;
+  background-image: url(../images/roll-the-dice.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .home .home-box {
+    flex-basis: 50%;
+    background-color: #f0f0f191;
+    padding: 20px; }
+    .home .home-box h1 {
+      font-size: 56px;
+      font-weight: 300;
+      margin-bottom: 2px; }
+      .home .home-box h1 span {
+        font-family: "Orbitron", sans-serif;
+        font-weight: bolder; }
+    .home .home-box p {
+      font-size: 17px;
+      font-weight: 300; }
+
+.gamelist-container {
+  margin-top: 20px;
+  border-top: 2px solid #4f80e1; }
+
+.gamelist {
+  padding-top: 40px;
+  min-height: 100px; }
+
+.games-row-1,
+.games-row-2 {
+  margin: 10px 0; }
+
+.game-box {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #4f80e1;
+  min-height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.game-box:nth-child(2) {
+  margin: 0; }
+
+.game-box-info {
+  background: #4f80e1;
+  height: 20%; }
 
 /*# sourceMappingURL=style.css.map */
