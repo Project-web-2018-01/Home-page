@@ -2,10 +2,7 @@
 /*FONTS*/
 body {
   font-family: Lato;
-  margin: 0;
-  background-image: url(../images/bg-icons.png);
-  background-repeat: repeat;
-  background-color: #f0f0f1; }
+  margin: 0; }
 
 .navbar {
   width: 100%;
@@ -16,7 +13,8 @@ body {
   text-transform: uppercase;
   min-height: 15vh;
   font-size: 19px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  background: url(../images/bg-icons2.png); }
   .navbar a {
     font-family: "Orbitron", sans-serif; }
     .navbar a span {
@@ -56,7 +54,8 @@ body {
 
 .gamelist-container {
   margin-top: 20px;
-  border-top: 2px solid #4f80e1; }
+  border-top: 2px solid #4f80e1;
+  background-image: url(../images/background.png); }
 
 .gamelist {
   padding-top: 40px;
@@ -80,5 +79,28 @@ body {
 .game-box-info {
   background: #4f80e1;
   height: 20%; }
+
+footer {
+  background: #292c44; }
+  footer .row {
+    width: 80%; }
+
+.icon-btn {
+  background: #fff;
+  color: #292c44;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .2s ease-in-out; }
+  .icon-btn:hover {
+    transform: scale(1.1); }
+  .icon-btn:focus {
+    outline: none; }
+  .icon-btn a {
+    color: #292c44; }
+  .icon-btn i {
+    font-size: 2.3rem; }
 
 /*# sourceMappingURL=style.css.map */
