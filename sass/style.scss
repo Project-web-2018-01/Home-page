@@ -13,9 +13,6 @@ $lato: 'Lato', sans-serif;
 body {
     font-family: Lato;
     margin: 0;
-    background-image: url(../images/bg-icons.png);
-    background-repeat: repeat;
-    background-color: $dark-white;
 }
 
 .navbar {
@@ -28,6 +25,7 @@ body {
     min-height: 15vh;
     font-size: 19px;
     margin-bottom: 0px;
+    background: url(../images/bg-icons2.png);
 
     a {
         font-family: $orbitron;
@@ -84,6 +82,7 @@ body {
 .gamelist-container {
 	margin-top: 20px;
 	border-top: 2px solid $blue;
+    background-image: url(../images/background.png);
 }
 
 .gamelist {
@@ -112,4 +111,39 @@ body {
 .game-box-info {
 	background: $blue;
 	height: 20%;
+}
+
+footer {
+    background: #292c44;
+
+    .row {
+        width: 80%;
+    }
+}
+
+.icon-btn {
+    background: #fff;
+    color: $dark-blue;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    a {
+        color: $dark-blue;
+    }
+
+    i {
+        font-size: 2.3rem;
+    }
 }
