@@ -17,7 +17,6 @@ body {
     background-position: cover;
     margin-top: 0;
 
-
 .navbar {
     width: 100%;
     align-items: right;
@@ -28,6 +27,7 @@ body {
     min-height: 15vh;
     font-size: 19px;
     margin-bottom: 0px;
+    background: url(../images/bg-icons2.png);
 
     a {
         font-family: $orbitron;
@@ -81,6 +81,7 @@ body {
 .gamelist-container {
 	margin-top: 20px;
 	border-top: 2px solid $blue;
+    background-image: url(../images/background.png);
 }
 
 .gamelist {
@@ -127,5 +128,33 @@ footer {
     background-color: #292c44;
     color: white;
     text-align: center;
-}
+    background: #292c44;
+    .row {
+        width: 80%;
+    }
+.icon-btn {
+    background: #fff;
+    color: $dark-blue;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    a {
+        color: $dark-blue;
+    }
+
+    i {
+        font-size: 2.3rem;
+    }
 }
