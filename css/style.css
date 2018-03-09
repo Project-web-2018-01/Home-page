@@ -56,8 +56,7 @@ body {
   body .gamelist {
     padding-top: 40px;
     min-height: 100px; }
-  body .games-row-1,
-  body .games-row-2 {
+  body .games-row-1 {
     margin: 10px 0; }
   body .game-box {
     flex: 1;
