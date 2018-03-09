@@ -3,7 +3,7 @@
 body {
   font-family: Lato;
   margin: 0;
-  background-image: url(../images/bg-icons.png);
+  background-image: url(../images/background.png);
   background-repeat: repeat;
   margin-top: 0; }
   body .navbar {
@@ -81,7 +81,8 @@ body {
     height: 100%;
     background-color: #292c44;
     color: white;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
     body footer p {
       text-align: center;
       color: white; }
