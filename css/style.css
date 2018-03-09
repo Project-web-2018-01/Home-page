@@ -2,6 +2,85 @@
 /*FONTS*/
 body {
   font-family: Lato;
+  margin: 0;
+  background-image: url(../images/bg-icons.png);
+  background-position: cover;
+  margin-top: 0; }
+  body .navbar {
+    width: 100%;
+    align-items: right;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: #292c44;
+    text-transform: uppercase;
+    min-height: 15vh;
+    font-size: 19px;
+    margin-bottom: 0px; }
+    body .navbar a {
+      font-family: "Orbitron", sans-serif; }
+      body .navbar a span {
+        color: #ff5349; }
+    body .navbar .navbar-collapse {
+      justify-content: flex-end; }
+      body .navbar .navbar-collapse .navbar-nav .nav-link {
+        font-family: "Lato", sans-serif;
+        margin: 10px; }
+        body .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+          background-color: #18cdca;
+          color: white;
+          border-radius: 3px; }
+  body .home-container {
+    padding: 0; }
+  body .home {
+    min-height: 60vh;
+    background-image: url(../images/roll-the-dice.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body .home .home-box {
+      flex-basis: 50%;
+      background-color: #f0f0f191;
+      padding: 20px; }
+      body .home .home-box h1 {
+        font-size: 56px;
+        font-weight: 300;
+        margin-bottom: 2px; }
+      body .home .home-box p {
+        font-size: 17px;
+        font-weight: 300; }
+  body .gamelist-container {
+    margin-top: 20px;
+    border-top: 2px solid #4f80e1; }
+  body .gamelist {
+    padding-top: 40px;
+    min-height: 100px; }
+  body .games-row-1,
+  body .games-row-2 {
+    margin: 10px 0; }
+  body .game-box {
+    flex: 1;
+    margin: 0 10px;
+    border: 1px solid #4f80e1;
+    min-height: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  body .game-box:nth-child(2) {
+    margin: 0; }
+  body .game-box-info {
+    background: #4f80e1;
+    height: 20%; }
+    body .game-box-info :hover {
+      cursor: pointer;
+      flex-grow: 10; }
+  body .hidden-p {
+    display: none; }
+    body .hidden-p :hover {
+      display: inline; }
+  body footer {
+    margin-top: 50px;
+    height: 100%;
+    background-color: #292c44;
+    color: white;
+    text-align: center; }
   margin: 0; }
 
 .navbar {
@@ -79,7 +158,6 @@ body {
 .game-box-info {
   background: #4f80e1;
   height: 20%; }
-
 footer {
   background: #292c44; }
   footer .row {
