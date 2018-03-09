@@ -16,7 +16,8 @@ body {
     min-height: 15vh;
     font-size: 15px;
     margin-bottom: 0px;
-    background: url(../images/bg-icons2.png); }
+    background: url(../images/bg-icons2.png);
+    position: fixed; }
     body .navbar a {
       font-family: "Orbitron", sans-serif; }
       body .navbar a span {
@@ -33,7 +34,7 @@ body {
   body .home-container {
     padding: 0; }
   body .home {
-    height: 85vh;
+    height: 100vh;
     background-image: url(../images/roll-the-dice.png);
     background-repeat: no-repeat;
     background-size: cover; }
@@ -105,5 +106,13 @@ body {
         color: #292c44; }
       body footer .icon-btn i {
         font-size: 2.3rem; }
+
+nav {
+  background-color: #d81b1b;
+  transition: all 0.8s ease !important; }
+
+.shrink {
+  position: fixed;
+  min-height: 10vh !important; }
 
 /*# sourceMappingURL=style.css.map */
